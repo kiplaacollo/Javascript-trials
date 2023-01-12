@@ -37,10 +37,16 @@ body {
 }
 .navigation.active {
     display: flex;
+    position: fixed;
     flex-direction: column;
+    top: 70px;
     width: 100%;
-    margin-top: 200px;
-    gap: 20px;
+    height: 100vh;
+    
+    
+}
+.navigation.active li {
+    padding-top: 15px;
 }
 .head ul li {
     list-style: none;
