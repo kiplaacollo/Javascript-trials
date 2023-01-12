@@ -30,6 +30,12 @@ for (let i =0; i < listItem.length; i++){
 
     document.body.appendChild(Headsection);
 
+    const humb = document.querySelector('.icon');
+    const nav = document.querySelector('.navigation');
+    humb.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    })
+
     
     
 
