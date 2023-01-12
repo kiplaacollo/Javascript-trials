@@ -1,3 +1,5 @@
+const topNav = document.querySelector('.top');
+
 const Headsection = document.createElement('section');
 const header = document.createElement('div');
 header.classList.add('head');
@@ -28,8 +30,7 @@ for (let i =0; i < listItem.length; i++){
 
 
     Headsection.appendChild(header);
-
-    document.body.appendChild(Headsection);
+    topNav.appendChild(Headsection);
 
     const humb = document.querySelector('.icon');
     const nav = document.querySelector('.navigation');
