@@ -2,6 +2,7 @@ const Headsection = document.createElement('section');
 const header = document.createElement('div');
 header.classList.add('head');
 const msg = document.createElement('h1');
+msg.classList.add('msg');
 msg.textContent = 'WELCOME';
 const list = document.createElement('ul');
 const listItem = ['Home', 'About', 'Contact'];;
@@ -34,6 +35,7 @@ for (let i =0; i < listItem.length; i++){
     const nav = document.querySelector('.navigation');
     humb.addEventListener('click', () => {
         nav.classList.toggle('active');
+        msg.classList.toggle('active');
     })
 
     
