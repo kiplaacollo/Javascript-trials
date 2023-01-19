@@ -1,4 +1,4 @@
-const topNav = document.querySelector('.top');
+/*const topNav = document.querySelector('.top');
 
 const Headsection = document.createElement('section');
 const header = document.createElement('div');
@@ -37,7 +37,7 @@ for (let i =0; i < listItem.length; i++){
     humb.addEventListener('click', () => {
         nav.classList.toggle('active');
         msg.classList.toggle('active');
-    })
+    })*/
 
     
     

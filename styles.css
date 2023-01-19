@@ -9,7 +9,7 @@
 html {
     padding: 0px;
     box-sizing: border-box;
-    background: rgba(0, 0, 0, 0.05);
+    
 }
 body {
     width: 375px;
@@ -18,57 +18,58 @@ body {
     outline: none;
     margin: 0px;
 }
+
+/*----------->Navigation<-----------*/
 .top {
-    padding-top: 5px;
-    margin-top: 10px;
+    position: absolute;
+    width: 375px;
+    height: 92px;
+    left: 0px;
+    top: 0px;
 }
 .head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 50px;
-    background-color: white;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-}
-.head h1 {
-    font-size: 24px;
-    color: gold;
-}
-.navigation {
-    display: none;
-    
-}
-.navigation.active {
-    display: flex;
-    position: fixed;
-    flex-direction: column;
-    top: 70px;
-    width: 100%;
-    height: 100vh;
-    transition: 1s ease-in-out;
-    background: rgba(255, 255, 255, 1);
-    color: darkgoldenrod;
-    z-index: 10;
-    
-}
-.navigation.active li {
-    padding-top: 15px;
-}
-.msg.active {
-    opacity: 0;
-}
-.head ul li {
-    list-style: none;
-    
-}
-.icon {
     position: absolute;
-    left: 180px;
-    top: 0px;
-    margin-top: 10px;
-    display: block;
-    color: black;
-    background-color: rgba(255, 255, 255, 0.5);
+    width: 375px;
+    height: 48px;
+    left: 0px;
+    right: 0px;
+    top: 44px;
+    bottom: 0px;
+}
+.logo {
+    padding: 10px 12px;
+    position: absolute;
+    width: 90px;
+    height: 28px;
+    left: 24px;
+    top: calc(50% - 48px/2);
+}
+.hamurger {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px;
+
+    position: absolute;
+    right: 24px;
+    top: calc(50% - 40px/2);
+
+    border-radius: 8px;
+    border: none;
+    background: none;
+}
+.fa-bars {
+    font-size: 20px;
+    font-weight: 300;
+    color: #28352F;
+    margin-left: 1px;
+    
+}
+
+.hamurger:hover, .logo:hover {
+    background-color: #C5E9DA;
+    color: #ffffff;
+    cursor: pointer;
 }
 .bgImg {
     position: relative;
@@ -77,8 +78,10 @@ body {
     background-repeat: no-repeat;
     width: 418.38px;
     height: 726px;
-    top: -868px;
+    top: -876px;
 }
+
+/*------------>Portfolio<-------------*/
 .content {
     width: 375px;
     padding: 64px 24px;
@@ -88,6 +91,7 @@ body {
     display: flex;
     text-align: center;
     flex-direction: column;
+    margin-top: 98.12px;
     
 }
 .content h2 {
@@ -119,6 +123,8 @@ body {
     order: 1;
     flex-grow: 0;
 }
+
+/*-------------->Social media<----------------*/
 .social {
     display: flex;
     flex-direction: row;
@@ -150,45 +156,55 @@ body {
 }
 
 .fa-twitter {
-   /* position: absolute;*/
     
     width: 20px;
     height: 20px;
     left: 102.42px;
     top: 536px;
     color: #505f79;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
 }
 .fa-linkedin {
-    /*position: absolute;*/
     width: 20px;
     height: 20px;
     left: 141.42px;
     top: 536px;
     color: #505f79;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
 }
 .fa-medium {
-    /*position: absolute;*/
     width: 20px;
     height: 20px;
     left: 181.42px;
     top: 536px;
     color: #505f79;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
 }
 .fa-github {
-    /*position: absolute;*/
     width: 20px;
     height: 20px;
     left: 221.42px;
     top: 536px;
     color: #505f79;
+    flex: none;
+    order: 4;
+    flex-grow: 0;
 }
 .fa-angellist {
-    /*position: absolute;*/
     width: 20px;
     height: 20px;
     left: 258.42px;
     top: 536px;
     color: #505f79;
+    flex: none;
+    order: 5;
+    flex-grow: 0;
 }
 .action {
     width: 327px;
@@ -219,6 +235,50 @@ body {
     height: 3283px;
     left: 0px;
     top: 708px;
+}
+.works h1 {
+    width: 327px;
+    height: 125px;
+    font-size: 40px;
+    font-weight: 700px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #172B4D;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-top: 64px;
+    gap: 24px;
+}
+.card-works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px 2px;
+    gap: 24px;
+
+    width: 331px;
+    height: 2972px;
+
+
+/* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.sub-card {
+    width: 327px;
+    height: 474px;
+
+
+/* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
 @media screen and (min-width: 768px) {
