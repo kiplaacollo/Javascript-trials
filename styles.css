@@ -795,8 +795,8 @@ textarea:focus {
     text-decoration: none;
   }
 
-
   /* ----------->Navigation<----------- */
+
   .top {
     position: absolute;
     width: 1440px;
@@ -850,9 +850,6 @@ textarea:focus {
     transition: all 0.3s ease-in-out;
     z-index: 10;
   }
-
-
-
 
   /* ------------>Portfolio<------------- */
 
@@ -1202,8 +1199,8 @@ textarea:focus {
     flex-grow: 0;
   }
 
-
   /* -------About Section-------- */
+  
   .about {
     display: flex;
     flex-direction: column;
